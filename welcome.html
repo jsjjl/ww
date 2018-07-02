@@ -1,0 +1,44 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>抓娃娃</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,shrink-to-fit=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta name="msapplication-tap-highlight" content="no">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<link href="css/global_m.css?v1.0.13" rel="stylesheet">
+</head>
+
+<body>
+<!--横屏-->
+<div id="page-landscape" class="page-landscape">
+    <h3>竖屏体验更佳！</h3>
+</div>
+
+
+<!--竖屏-->
+<div class="page-portrait" id="page-portrait" >
+    <!--加载动画-->
+    <div class="index " id="loadingPage">
+        <div class="scaleOut">
+                <div class="mask" id="img-loading-txt">100%</div>
+                <div class="index_bt" id="readyGo"></div>
+                <div class="index_footer">声明：本应用由上海盼琦信息科技有限公司提供</div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/style.js"></script>
+<script>
+    $(function(){
+        // 初始化
+        $(".index_bt").click(function(){
+            window.location.href="index.html";
+        });
+    })
+</script>
+</html>

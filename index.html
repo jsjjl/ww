@@ -1,0 +1,451 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>抓娃娃</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,shrink-to-fit=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta name="msapplication-tap-highlight" content="no">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<link href="css/global_m.css?v1.0.8" rel="stylesheet">
+<link rel="stylesheet" href="css/swiper.min.css">
+</head>
+
+<body>
+<!--横屏-->
+<div id="page-landscape" class="page-landscape">
+    <h3>竖屏体验更佳！</h3>
+</div>
+
+
+<!--竖屏-->
+<div class="page-portrait" id="page-portrait" >
+   
+ <!--里面内容-->
+ <div id="pageContainer" class="page-container ">
+
+    <!-- 首页 -->
+    <div class="nwrapper j_index ">
+
+          <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper" id="aj1_hdp">
+            <!-- <div class="swiper-slide"><a href="" target="_blank"><img src="./img/j_index_bt1.png" class=""></a></div> -->
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+       <img src="./img/j_index_t.png" class="j_index_tbj">
+       <img src="./img/j_index_c.png" class="j_index_cbj">
+       <img src="./img/j_index_f.png" class="j_index_fbj">
+       
+       <!-- 抓娃娃  -->
+       <img src="./img/j_index_bt1.png" class="j_index_bt1">
+       <!-- 我的背包  -->
+       <img src="./img/j_index_bt2.png" class="j_index_bt2">
+
+       <!-- 每日竞赛 -->
+       <img src="./img/j_index_br1.png" class="j_index_br1">
+       <!-- 限时竞赛 -->
+       <img src="./img/j_index_br2.png" class="j_index_br2">
+       <!-- 签到 -->
+       <img src="./img/j_index_br3.png" class="j_index_br3">
+       <!-- 客服 -->
+       <img src="./img/j_index_br4.png" class="j_index_br4">
+
+
+       <!-- 邀请有奖 -->
+       <img src="./img/j_index_bf1.png" class="j_index_bf1">
+       <!-- 每日任务 -->
+       <img src="./img/j_index_bf2.png" class="j_index_bf2">
+       <!-- 排行榜 -->
+       <img src="./img/j_index_bf3.png" class="j_index_bf3">
+       <!-- 收件箱 -->
+       <img src="./img/j_index_bf4.png" class="j_index_bf4">
+
+
+       <!-- 充值 -->
+       <img src="./img/j_index_bl1.png" class="j_index_bl1">
+       <!-- 兑换 -->
+       <img src="./img/j_index_bl2.png" class="j_index_bl2">
+
+       <div class="j_index_tx"><img src="./img/tx.png"><em class="ell">0</em></div>
+       <div class="j_index_tx"><img src="./img/tx.png" id="aj1_picture"><em class="ell"  id="aj1_rema_number">--</em></div>
+    </div>
+
+      <!-- 充值 -->
+      <div class="tbj hide" id="recharge">
+
+            <div class="recharge_box">
+                <div class="close"></div>
+
+                <div class="recharge_main">
+                    <a href="#"><img src="./img/recharge1.png"></a>
+                    <a href="#"><img src="./img/recharge2.png"></a>
+                    <a href="#"><img src="./img/recharge3.png"></a>
+                    <a href="#"><img src="./img/recharge4.png"></a>
+                    <a href="#"><img src="./img/recharge5.png"></a>
+                    <a href="#"><img src="./img/recharge1.png"></a>
+                    <a href="#"><img src="./img/recharge2.png"></a>
+                    <a href="#"><img src="./img/recharge3.png"></a>
+                    <a href="#"><img src="./img/recharge4.png"></a>
+                    <a href="#"><img src="./img/recharge5.png"></a>
+                </div>
+            </div>
+
+    </div> 
+
+    <!-- 我的背包 -->
+    <div class="tbj hide" id="record">
+           
+            <div class="record_box">
+                    <div class="close"></div>
+    
+                    <!-- 我的娃娃 -->
+                    <div class="j_record_boxtp j_record_boxtp1 active" data-id="1">我的娃娃</div>
+                    <!-- 提取记录 -->
+                    <div class="j_record_boxtp j_record_boxtp2 " data-id="2">提取记录</div>
+                    <!-- 金币记录 -->
+                    <div class="j_record_boxtp j_record_boxtp3"  data-id="3">金币记录</div>
+                    
+                    <!-- 我的娃娃 -->
+                    <div class="record_main record_main1" id="aj1_wdww">
+    
+                        <!-- <div class="record_a">
+                            <p>
+                               <img src="./img/tx.png">
+                               <i>阿呆狗</i>
+                               <i><b></b>10.00</i>
+                            </p>
+                            
+                            <span>
+                                <em class="tqww">娃娃提取</em>
+                                <em>娃娃兑换金币</em>
+                            </span>
+                        </div> -->
+                        
+                    </div>
+
+                    <!-- 提取记录 -->
+                    <div class="record_main record_main2 hide" id="aj1_tqjl">
+    
+                            <!-- <div class="record_a2">
+                                   <img src="./img/tx.png">
+                                   <p>
+                                        <span>娃娃名称：阿呆狗</span>
+                                        <span>兑换数量： 1</span>
+                                   </p>
+                                   
+                            </div> -->
+        
+                    </div>
+
+                    <!-- 金币记录 -->
+                    <div class="record_main record_main3 hide" id="aj1_jbjl">
+    
+                            <!-- <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div>-->
+                    </div>
+    
+                    <img src="./img/j_wdbb_bt.png" class="j_lxkf">
+    
+            </div>
+
+
+            <!-- 提取娃娃 -->
+            <div class="tbj hide" id="tiqu">
+
+                    <div class="tiqu_box"> 
+                        <div class="close"></div>
+                                                    
+                        <div class="tiqu_top">
+                            <em>请填写详细收获地址</em>
+                            <p><span>姓名：</span><input type="text" id="ad1_xm"></p>
+                            <p><span>手机：</span><input type="tel" id="ad1_sj"></p>
+                            <p><span>地址：</span><input type="text" id="ad1_dz"></p>
+                            <p><span>备注：</span><input type="text" id="ad1_bz"></p>
+                        </div>
+        
+                        <div class="tiqu_bt"></div>
+
+                        <div class="tiqu_top2 hide">申请成功</div>
+                        <div class="tiqu_bt2 hide"></div>
+
+                    </div>
+            
+            </div>
+
+            <!-- 客服 -->
+            <div class="tbj hide" id="kefu">
+
+                    <div class="kf_box"> 
+                        <div class="close"></div>
+                        <div class="kf_top kfnrbox">
+                            <!-- QQ客服：       13456<br/>
+                                客服邮箱：      kefu@icecn.net<br/><br/>
+                                
+                                公众号客服：<br/><br/>
+                                
+                                玩家QQ群：    12345<br/>
+                                客服服务时间:  9：00-21：00 -->
+                            </div>
+                    </div>
+            
+            </div>
+        
+    </div>
+
+
+    <!-- 每日竞赛 -->
+    <div class="nwrapper paihang hidden" id="mrjs">
+            <img src="./img/j_mrjc_tb1.png" class="j_mrjc_tb">
+
+            <div class="phbj">
+                <a href="#" class="close"></a>
+                <div class="phb_top" id="aj1_timemrjs">活动倒计时：--:--</div>
+                <div class="phb_box">
+                    <div class="phb_l" id="aj1_mrjs">
+                            <!-- <div class="phb_l_a">
+                                <i>1</i>
+                                <img src="./img/tx.png">
+                                <p>
+                                    <em>妞妞妞</em>
+                                
+                                    <i>抓取次数：115</i> 
+                                </p>
+                                <span>
+                                    <img src="./img/phb_ww.png">
+                                </span>
+                            </div> -->
+                    </div>
+
+                    <div class="phb_l_a phb_l_a2">
+                            <i id="aj1_zjmrjsxsb">未上榜</i>
+                            <img src="./img/tx.png"  id="aj1_zjmrjstx">
+                            <p>
+                                <em id="aj1_zjmrjsxm">--</em>
+                            
+                                <i>抓取次数：<b id="aj1_zjmrjscs"></b></i> 
+                            </p>
+                            <div class="goplay"></div>
+                        </div>
+                </div>
+            </div>
+
+
+    </div>
+
+    <!-- 限时竞赛 -->
+    <div class="nwrapper paihang hide" id="xsjs">
+            <img src="./img/j_mrjc_tb2.png" class="j_mrjc_tb">
+
+            <div class="phbj">
+                <a href="#" class="close"></a>
+                <div class="phb_top" id="aj1_timexsjs">活动倒计时：--:--</div>
+                <div class="phb_box">
+
+                    <div class="xsjst">
+                        <span>库存<br/><i id="aj1_xsjslqsj"></i></span>
+                        <img src="./img/phb_ww.png" id="aj1_xsjswwtp">
+
+                        <span>活动<br/> <i id="aj1_xsjsjz">--</i></span>
+                    </div>
+
+                    <div class="xsjsc">
+                        <em><i id="aj1_xsjsmc">--</i></em><i id="aj1_xsjsnr">--</i>
+                    </div>
+                  
+                    <img src="./img/j_qzq.png" class="xsjsb">
+
+                    <div class="sxjsf">
+                            领取不会扣除金币
+                            <span></span>
+                            <div class="clear"></div>
+                            已经领取的玩家（<i id="aj1_xsjslq">--</i>）
+                    </div>
+
+                </div>
+            </div>
+
+    
+    </div>
+
+
+    <!-- 签到 -->
+    <div class="tbj hide" id="qd">
+        <img src="./img/qdt.png" class="j_qd_tb">
+
+        <div class="qd_box"> 
+                <div class="close"></div>
+                <div class="qd_t">第<i id="aj1_qdt">0</i>天</div>
+                <img src="./img/jb2.png" class="qd_img">
+                <div class="qd_c">奖励金币&nbsp;&nbsp;<i id="aj1_qdb">0</i>金币</div>
+                <img src="./img/qd2.png" class="qd_ibt">
+        </div>  
+    </div>
+
+    <!-- 客服 -->
+    <div class="tbj hide" id="kf">
+        <img src="./img/kft.png" class="j_qd_tb">
+        
+        <div class="qd_box"> 
+                <div class="close"></div>
+                
+                <div class="kf_top kfnrbox">
+                       </div>
+        </div>  
+    </div>
+
+    <!-- 邀请有奖 -->
+    <div class="tbj hide" id="yq">
+        <img src="./img/yq_t.png" class="j_yq_tb">
+        
+        <div class="yq_box"> 
+                <div class="close"></div>
+                <img src="./img/yq_hy.png" class="yq_hy">
+                <img src="./img/yq_pyq.png" class="yq_pyq">
+
+                <div class="yq_main" id="aj1_yq">
+                    <!-- <div class="phb_l_a phb_l_a3">
+                            <img src="./img/tx.png">
+                            <p>
+                                <em>邀请到5位好友</em>
+                            
+                                <i>奖励金币50</i> 
+                            </p>
+                            <div class="yqqw"></div>
+                    </div> -->
+                </div>
+        </div>  
+    </div>
+
+    
+    <!-- 每日任务 -->
+    <div class="tbj hide" id="rw">
+        <img src="./img/tt.png" class="j_yq_tb">
+        
+        <div class="yq_box"> 
+                <div class="close"></div>
+                <div class="phb_top rwt" id="aj1_mrrw_djs">
+                     活动倒计时: --:--
+                </div>
+
+                <div class="yq_main2" id="aj1_mrrw">
+                    <!-- <div class="rw_l_a">
+                            <img src="./img/tx.png">
+                            <div class="rw_jd">
+                                <p>抓6次娃娃</p>
+                                <p>进度：<span><i style="width:60%;"></i></span></p>
+                            </div>
+                            <div class="yqqw"></div>
+                    </div> -->
+
+                    
+                </div>
+        </div>  
+    </div>
+
+
+
+     <!-- 排行榜 -->
+     <div class="nwrapper paihang hide" id="phb">
+
+            <img src="./img/jphbt.png" class="j_mrjc_tb">
+
+            <a href="#" class="paihang_close"></a>
+            <div class="phbj phbj2">
+                <div class="phb_bt phb_btl active" id="phb_btl"></div>
+                <div class="phb_bt phb_btr" id="phb_btr"></div>
+        
+                <div class="phb_top phb_top2" id="aj1_phb_djs">
+                        活动倒计时: --:--
+                </div>
+        
+                <div class="phb_l jphb_l phb_bt_box" id="phb_btl_box">
+                            <!-- <div class="phb_l_a jphb_l_a">
+                                <i>1</i>
+                                <img src="./img/tx.png">
+                                <p>
+                                    <em>妞妞妞</em>
+                                
+                                    <i>抓取次数：115</i> 
+                                </p>
+                                <span>
+                                    <img src="./img/phb_ww.png">
+                                    <b></b>
+                                </span>
+                            </div> -->
+                </div>
+        
+        
+                <div class="phb_r phb_r2 phb_bt_box hide " id="phb_btr_box">
+                        <!-- <div class="phb_l_a">
+                            <i class="fhicon fh1">1</i>
+                            <img src="./img/tx.png">
+                            <p>
+                                <em>妞妞妞</em>
+                            
+                                <i>富豪指数 115</i> 
+                            </p>
+                            <span>
+                                <img src="./img/jljn.png">
+                                <i>5000</i>
+                                <b></b>
+                            </span>
+                        </div> -->
+                             
+                </div>
+            </div>
+
+            <div class="zrgj" id="aj1_zrgj">
+                <!-- <div class="zrgj_t">昨日冠军</div>
+                <div class="zrgj_l"> <img src="./img/tx.png"><span>妞妞妞</span></div>
+                <div class="zrgj_r"><em>奖励：</em><img src="./img/weal_img.png"><em>x400</em></div> -->
+            </div>
+        
+    
+    
+     </div>
+
+     <!-- 收件箱 -->
+     <div class="nwrapper paihang hide" id="sjx">
+
+            <a href="#" class="paihang_close"></a>
+
+             <div class="yq_main3 yq_main4" id="aj1_sjx">
+                    <!-- <div class="phb_l_a phb_l_a3">
+                            <img src="./img/tx.png">
+                            <p>
+                                <em>2018/6/4&nbsp;下午4:11:32</em>
+                            
+                                <i>抓3次娃娃&nbsp;&nbsp;5金币</i> 
+                            </p>
+                            <div class="yqqw"></div>
+                    </div> -->
+                 
+                </div>
+
+    
+     </div>
+    
+</div>
+</div> 
+
+
+<!--背景音乐-->
+<audio src="video/bgMusic.mp3" id="musicStar"  loop="loop" preload="auto" ></audio>
+
+
+</body>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+<script src="js/style.js"></script>
+<script src="js/index.js"></script>
+</html>

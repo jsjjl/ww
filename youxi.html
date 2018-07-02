@@ -1,0 +1,356 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<title>抓娃娃</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,shrink-to-fit=no">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta name="msapplication-tap-highlight" content="no">
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<link href="css/global_m.css?v1.0.8" rel="stylesheet">
+</head>
+
+<body>
+<!--横屏-->
+<div id="page-landscape" class="page-landscape">
+    <h3>竖屏体验更佳！</h3>
+</div>
+
+
+<!--竖屏-->
+<div class="page-portrait" id="page-portrait" >
+   
+ <!--里面内容-->
+ <div id="pageContainer" class="page-container ">
+
+    <!-- 游戏页面 -->    
+    <div class="nwrapper youxi">
+
+       <!-- 分数 -->
+       <div class="j_index_tx j_index_tx2"><img src="./img/tx.png" id="aj1_picture"><em class="ell ssjf"  id="aj1_rema_number">--</em></div>
+       <img src="./img/yxff.png" class="yxff">
+       <!-- 抓爪 -->
+       <div class="zhua zhuamove"></div>
+
+       
+       <div class="youxi_topbj"></div>
+
+       <!-- 娃娃图片 -->
+       <div class="youxi_wwmain">
+           <img src="./img/youxi_ww.png" class="youxi_ww1 people01 aj1_wawa_picture">
+           <img src="./img/youxi_ww.png" class="youxi_ww2 people02 aj1_wawa_picture">
+           <img src="./img/youxi_ww.png" class="youxi_ww3 people03 aj1_wawa_picture">
+           <img src="./img/youxi_ww.png" class="youxi_ww4 people04 aj1_wawa_picture">
+           <img src="./img/youxi_ww.png" class="youxi_ww5 people05 aj1_wawa_picture">
+       </div>
+       <div class="yy"></div>
+       <div class="youxi_kuanbj"></div>
+
+       
+       <div class="ks_box">
+           
+            <!-- 开始游戏 -->
+            <div class="youxi_bt2"><span id="aj1_need_number">--</span></div>
+             <!-- 更换房间 -->
+             <div class="youxi_bt1"></div>
+           
+       </div>
+
+       <!-- 游戏中内容 -->
+       <div class="js_box hide">
+            <div class="js_fx">
+                <i class="t pointert"></i>
+                <i class="f pointerf"></i>
+                <i class="l pointerl" id="bt_l"></i>
+                <i class="r pointerr"></i>
+            </div>
+            <!-- 开始游戏 -->
+            <div class="js_time">
+                <em class="js_time30"></em>
+            </div>
+            <!-- 抓取记录 -->
+            <div class="js_go"></div>
+       </div>
+
+        <!-- 其他按钮 -->
+        <div class="youxi_btbox">
+            <!-- 娃娃详情 -->
+            <div class="youxi_rbt2 youxi_r2"><span id="aj1_people">--</span></div>
+            <div class="youxi_rbt youxi_r1"></div>
+
+          
+
+            <div class="yx_fbt">
+                <!-- 设置 -->
+                <div class="youxi_fbt youxi_f1"></div>
+                <!-- 包裹 -->
+                <div class="youxi_fbt youxi_f2"></div>
+                <!-- 充值 -->
+                <div class="youxi_fbt youxi_f3"></div>
+            </div>
+        </div>
+        
+        <div class="youxi_cbj"></div>
+       <div class="youxi_fbj"></div>
+    </div>
+
+    <!-- 中奖情况 -->
+    <div class="tbj hide" id="zhongjiang">
+        <div class="zhongjiang_morebox">
+               <span>恭喜你，抓到一只<i id="aj1_wawa_name"></i>！！</span>
+                <div class="close"></div>
+        </div>
+    </div>
+
+    <!-- 充值 -->
+    <div class="tbj hide" id="recharge">
+
+            <div class="recharge_box">
+                <div class="close"></div>
+
+                <div class="recharge_main">
+                    <a href="#"><img src="./img/recharge1.png"></a>
+                    <a href="#"><img src="./img/recharge2.png"></a>
+                    <a href="#"><img src="./img/recharge3.png"></a>
+                    <a href="#"><img src="./img/recharge4.png"></a>
+                    <a href="#"><img src="./img/recharge5.png"></a>
+                    <a href="#"><img src="./img/recharge1.png"></a>
+                    <a href="#"><img src="./img/recharge2.png"></a>
+                    <a href="#"><img src="./img/recharge3.png"></a>
+                    <a href="#"><img src="./img/recharge4.png"></a>
+                    <a href="#"><img src="./img/recharge5.png"></a>
+                </div>
+            </div>
+
+    </div> 
+
+    <!-- 设置 -->
+    <div class="tbj hide" id="set">
+
+        <div class="set_box">
+            <div class="close"></div>
+
+            <div class="set_main">
+                <p class="set_bt"><img src="./img/set_yy.png"> <i class="set_on active" id="set_yy_on"></i><i class="set_off" id="set_yy_off"></i></p>
+                <p class="set_bt"><img src="./img/set_yx.png"> <i class="set_on active" id="set_yx_on"></i><i class="set_off" id="set_yx_off"></i></p>
+                <p><img src="./img/set_bz.png"> <i data-tel="123456789" class="set_lxkf"></i></p>
+                <span>UID:F04470660</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- 我的背包 -->
+    <div class="tbj hide" id="record">
+           
+            <div class="record_box">
+                    <div class="close"></div>
+    
+                    <!-- 我的娃娃 -->
+                    <div class="j_record_boxtp j_record_boxtp1 active" data-id="1">我的娃娃</div>
+                    <!-- 提取记录 -->
+                    <div class="j_record_boxtp j_record_boxtp2 " data-id="2">提取记录</div>
+                    <!-- 金币记录 -->
+                    <div class="j_record_boxtp j_record_boxtp3"  data-id="3">金币记录</div>
+                    
+                    <!-- 我的娃娃 -->
+                    <div class="record_main record_main1" id="aj1_wdww">
+    
+                        <!-- <div class="record_a">
+                            <p>
+                               <img src="./img/tx.png">
+                               <i>阿呆狗</i>
+                               <i><b></b>10.00</i>
+                            </p>
+                            
+                            <span>
+                                <em class="tqww">娃娃提取</em>
+                                <em>娃娃兑换金币</em>
+                            </span>
+                        </div>
+    
+                        <div class="record_a">
+                            <p>
+                               <img src="./img/tx.png">
+                               <i>阿呆狗</i>
+                               <i><b></b>10.00</i>
+                            </p>
+                            
+                            <span>
+                                <em class="tqww">娃娃提取</em>
+                                <em>娃娃兑换金币</em>
+                            </span>
+                        </div>
+    
+                        <div class="record_a">
+                            <p>
+                               <img src="./img/tx.png">
+                               <i>阿呆狗</i>
+                               <i><b></b>10.00</i>
+                            </p>
+                            
+                            <span>
+                                <em class="tqww">娃娃提取</em>
+                                <em>娃娃兑换金币</em>
+                            </span>
+                        </div> -->
+                        
+                    </div>
+
+                    <!-- 提取记录 -->
+                    <div class="record_main record_main2 hide" id="aj1_tqjl">
+    
+                            <!-- <div class="record_a2">
+                                   <img src="./img/tx.png">
+                                   <p>
+                                        <span>娃娃名称：阿呆狗</span>
+                                        <span>兑换数量： 1</span>
+                                   </p>
+                                   
+                            </div>
+
+                            <div class="record_a2">
+                                    <img src="./img/tx.png">
+                                    <p>
+                                        <span>娃娃名称：阿呆狗</span>
+                                        <span>兑换数量： 1</span>
+                                   </p>
+                             </div>
+
+                             <div class="record_a2">
+                                    <img src="./img/tx.png">
+                                    <p>
+                                        <span>娃娃名称：阿呆狗</span>
+                                        <span>兑换数量： 1</span>
+                                   </p>
+                             </div>
+
+                             <div class="record_a2">
+                                    <img src="./img/tx.png">
+                                    <p>
+                                        <span>娃娃名称：阿呆狗</span>
+                                        <span>兑换数量： 1</span>
+                                   </p>
+                             </div> -->
+        
+                    </div>
+
+                    <!-- 金币记录 -->
+                    <div class="record_main record_main3 hide" id="aj1_jbjl">
+    
+                            <!-- <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div>
+                            <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div>
+                            <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div>
+                            <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div>
+                            <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div>
+                            <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div>
+                            <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div>
+                            <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div>
+                            <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div>
+                            <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div>
+                            <div class="record_a3">
+                                    2018/6/4下午4:12:21 &nbsp;-10
+                            </div> -->
+                    </div>
+    
+                    <img src="./img/j_wdbb_bt.png" class="j_lxkf">
+    
+            </div>
+
+            <!-- 提取娃娃 -->
+            <div class="tbj hide" id="tiqu">
+
+                    <div class="tiqu_box"> 
+                        <div class="close"></div>
+                                                    
+                        <div class="tiqu_top">
+                            <em>请填写详细收获地址</em>
+                            <p><span>姓名：</span><input type="text"></p>
+                            <p><span>手机：</span><input type="tel"></p>
+                            <p><span>地址：</span><input type="text"></p>
+                            <p><span>备注：</span><input type="text"></p>
+                        </div>
+        
+                        <div class="tiqu_bt"></div>
+
+                        <div class="tiqu_top2 hide">申请成功</div>
+                        <div class="tiqu_bt2 hide"></div>
+
+                    </div>
+            
+            </div>
+
+            <!-- 客服 -->
+            <div class="tbj hide" id="kefu">
+
+                    <div class="kf_box"> 
+                        <div class="close"></div>
+                        <div class="kf_top">
+                            QQ客服：       13456<br/>
+                                客服邮箱：      kefu@icecn.net<br/><br/>
+                                
+                                公众号客服：<br/><br/>
+                                
+                                玩家QQ群：    12345<br/>
+                                客服服务时间:  9：00-21：00</div>
+                    </div>
+            
+            </div>
+        
+    </div>
+
+    <!-- 娃娃详情 -->
+    <div class="tbj hide" id="goods_more">
+
+        <div class="goods_morebox">
+                <div class="close"></div>
+                <div class="goods_moremain">
+                    <img src="./img/goods_more_ww.png" id="aj2_wawa_picture">
+                    <span class="ell" id="aj2_wawa_name">--</span>
+                    <span class="ell" id="aj2_wawa_size">--</span>
+                </div>
+                <!-- 确认按钮 -->
+                <div class="goods_more_ok"></div>
+        </div>
+
+    </div>
+        
+    
+ </div>
+</div>
+
+
+<!--背景音乐-->
+<audio src="video/bgMusic.mp3" id="musicStar"  loop="loop" preload="auto" ></audio>
+<!--配乐-->
+<audio src="video/error.mp3" id="error" preload="auto"></audio>
+<audio src="video/music01.mp3" id="music01"   preload="auto" ></audio>
+
+
+</body>
+<script src="js/style.js"></script>
+<script src="js/youxi.js"></script>
+</html>
